@@ -105,16 +105,27 @@ if (answer6 == correctanswer) {//3==6 >> false
     }
 }
 
-var favapp = ["instagram", "snapchat", "facebook", "zoom", "whatsapp", "messenger"];
-var answer7 = prompt('what is my favorite application?');
-console.log(answer7);
-var correctanswer2 = favapp;
-if (answer7 == correctanswer2) {
-    alert('correct answer');
-} else if (answer7 !== correctanswer2) {
-    alert('it\' wrong answer ..try again!');
+var someArray = ['apple', 'mangoe', 'watermelon'];
+var someIndex = -1;
 
+do {
+    var someUser = prompt("what is my favorite fruit?" , "All of them have a green color.").toLowerCase();
+    for (var i = 0; i <= 6; i++) {
+        if (someArray[i] === someUser) {
+            someIndex = i;
+            break;
+        }
+    }
+
+    if (someIndex > -1) {
+        alert('it\'s true' );
+    } else {
+        alert('it\'s wrong..try again!');
+        // or something more put here
+    }
 }
+while (someIndex === -1);
+
 
 
 
