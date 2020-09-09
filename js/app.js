@@ -82,16 +82,15 @@ switch (answer5) {
     default:
         alert('In the first half of the twenties!');
 }
-
-//count = 1
+//count = 1 
 var answer6 = prompt('I have a list of top-ten places I wish to visit it..Can you guess the Maldives ranking from 1-10?');
-answer6 = Number(answer6);//3
+answer6 = Number(answer6);//3 
 console.log(answer6);
-var correctanswer = 6;//6
-//how to count 4 times!
-if (answer6 == correctanswer) {//3==6 >> false
+var correctanswer = 6;//6 
+//how to count 4 times! 
+if (answer6 == correctanswer) {//3==6 >> false 
     alert('correct');
-} else if (answer6 !== correctanswer) { //3!==6 ture
+} else if (answer6 !== correctanswer) { //3!==6 ture 
     alert('it\' wrong answer ..try again!');
 
     for (var count = 2; count <= 4; count++) {
@@ -104,6 +103,8 @@ if (answer6 == correctanswer) {//3==6 >> false
         }
     }
 }
+
+
 
 var someArray = [7, 8, 9];
 var someIndex = -1;
