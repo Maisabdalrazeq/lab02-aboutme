@@ -105,35 +105,24 @@ if (answer6 == correctanswer) {//3==6 >> false
     }
 }
 
-var someArray = ['apple', 'mangoe', 'watermelon'];
+var someArray = [7, 8, 9];
 var someIndex = -1;
-
 do {
-    var someUser = prompt("what is my favorite fruit?" , "All of them have a green color.").toLowerCase();
+    var answer7 = prompt("what is my favorite Number?", "All of them bigger than 5.");
+    answer7 = Number(answer7);
     for (var i = 0; i <= 6; i++) {
-        if (someArray[i] === someUser) {
+        if (someArray[i] === answer7) {
             someIndex = i;
             break;
         }
     }
-
     if (someIndex > -1) {
-        alert('it\'s true' );
+        alert('it\'s true');
     } else {
         alert('it\'s wrong..try again!');
-        // or something more put here
     }
 }
 while (someIndex === -1);
-
-
-
-
-
-
-
-
-
 
 alert('Welcome ' + userName + ' Now you will know some information about me!');
 
