@@ -15,14 +15,16 @@ questionSeven();
 
 function questionOne() {
 
-  var answer1 = prompt('What Is My Major?');
-  //console.log(answer1.toLowerCase());
+  var answer1 = prompt('Do you think my Major Is Accountant?');
+  console.log(answer1.toLowerCase());
   alert(answer1);
   switch (answer1) {
-  case 'accountant':
+  case 'yes':
+    case 'y':
     alert('no it\'s finance and banking!');
     break;
-  case 'finance':
+  case'no':
+  case'n':
       socre++;
     alert('yes it\'s a correct answer');
     break;
@@ -34,17 +36,16 @@ function questionOne() {
 
 
 function questionTwo() {
-  var answer2 = prompt('How much experience do I have?', 'guess ..I worked just for a months');
+  var answer2 = prompt('Do You think I have Experince more than 10 months?');
   //console.log(answer2);
   alert(answer2);
   switch (answer2) {
-  case '8':  socre++;
-    alert('yes, correct answer!');
+  case 'n':
+    case 'no'  socre++;
+    alert('yes, correct answer .. I worked just for 8 months!');
     break;
-  case '3':
-  case '9':
-  case '11':
-  case '5':
+  case 'y':
+  case 'yes':
     alert('No!..It\'s 8 Months');
     break;
   default:
@@ -142,7 +143,7 @@ function questionSeven() {
   var someArray = [7, 8, 9];
   var someIndex = -1;
   do {
-    var answer7 = prompt("what is my favorite Number?", "All of them bigger than 5.");
+    var answer7 = prompt("what is my favorite Number?", " from 5-10");
     answer7 = Number(answer7);
     for (var i = 0; i <= 6; i++) {
       if (someArray[i] === answer7) {
