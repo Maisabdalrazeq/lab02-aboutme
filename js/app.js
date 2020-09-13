@@ -1,6 +1,6 @@
 
 'use strict';
-var socre=0;
+var socre = 0;
 alert('Welcome To My Page');
 var userName = prompt('what is your name?');
 alert('hello ' + userName);
@@ -19,17 +19,17 @@ function questionOne() {
   console.log(answer1.toLowerCase());
   alert(answer1);
   switch (answer1) {
-  case 'yes':
+    case 'yes':
     case 'y':
-    alert('no it\'s finance and banking!');
-    break;
-  case'no':
-  case'n':
+      alert('no it\'s finance and banking!');
+      break;
+    case 'no':
+    case 'n':
       socre++;
-    alert('yes it\'s a correct answer');
-    break;
-  default:
-    alert('Money Related Major, guess and try again!');
+      alert('yes it\'s a correct answer');
+      break;
+    default:
+      alert('Money Related Major, guess and try again!');
   }
 
 }
@@ -37,19 +37,19 @@ function questionOne() {
 
 function questionTwo() {
   var answer2 = prompt('Do You think I have Experince more than 10 months?');
-  //console.log(answer2);
+  console.log(answer2);
   alert(answer2);
   switch (answer2) {
-  case 'n':
-    case 'no'  socre++;
-    alert('yes, correct answer .. I worked just for 8 months!');
-    break;
-  case 'y':
-  case 'yes':
-    alert('No!..It\'s 8 Months');
-    break;
-  default:
-    alert('I worked just for a months!');
+    case 'n':
+    case 'no':
+      alert('yes, correct answer .. I worked just for 8 months!');
+      break;
+    case 'y':
+    case 'yes': socre++;
+      alert('No!..It\'s 8 Months');
+      break;
+    default:
+      alert('I worked just for a months!');
   }
 
 }
@@ -57,19 +57,19 @@ function questionTwo() {
 function questionThree() {
 
   var answer3 = prompt('One of my goals! I want to travel to two countries ?', 'The first letter for the first one is T and the second one is G');
-  //console.log(answer3.toLowerCase());
+  console.log(answer3.toLowerCase());
   alert(answer3);
   switch (answer3) {
-  case 'turkey':
-  case 'greece': socre++;
-    alert('Yess,,it\'s true!');
-    break;
-  case 'tokyo':
-  case 'germany':
-    alert('No ,, it\'s wrong!');
-    break;
-  default:
-    alert('The state that begins with the T letter extends its lands on two continents; The continent of Asia and the continent of Europe.!');
+    case 'turkey':
+    case 'greece': socre++;
+      alert('Yess,,it\'s true!');
+      break;
+    case 'tokyo':
+    case 'germany':
+      alert('No ,, it\'s wrong!');
+      break;
+    default:
+      alert('The state that begins with the T letter extends its lands on two continents; The continent of Asia and the continent of Europe.!');
   }
 
 }
@@ -77,17 +77,17 @@ function questionThree() {
 function questionFour() {
 
   var answer4 = prompt('what kind of company i have worked in?', 'It\'s work is similar to the work of the bank, easy to know!');
-  //console.log(answer4.toLowerCase());
+  console.log(answer4.toLowerCase());
   alert(answer4);
   switch (answer4) {
-  case 'finance':  socre++;
-    alert('yes , true!');
-    break;
-  case 'insurance':
-    alert('no , wrong!');
-    break;
-  default:
-    alert('money Related company, guess and try again!');
+    case 'finance': socre++;
+      alert('yes , true!');
+      break;
+    case 'insurance':
+      alert('no , wrong!');
+      break;
+    default:
+      alert('money Related company, guess and try again!');
   }
 
 }
@@ -95,19 +95,19 @@ function questionFour() {
 function questionFive() {
 
   var answer5 = prompt('Can you guess how old I am?', 'I graduated in three years and a half in 1/2019!');
-  //console.log(answer5);
+  console.log(answer5);
   alert(answer5);
   switch (answer5) {
-  case '23': socre++;
-    alert('yes.. correct');
-    break;
-  case '22':
-  case '21':
-  case '20':
-    alert('no..wrong!');
-    break;
-  default:
-    alert('In the first half of the twenties!');
+    case '23': socre++;
+      alert('yes.. correct');
+      break;
+    case '22':
+    case '21':
+    case '20':
+      alert('no..wrong!');
+      break;
+    default:
+      alert('In the first half of the twenties!');
   }
 
 }
@@ -163,6 +163,6 @@ function questionSeven() {
 }
 
 alert('Welcome ' + userName + ' Now you will know some information about me!');
-alert('Your Score Is : '+ socre);
+alert('Your Score Is : ' + socre);
 
 
